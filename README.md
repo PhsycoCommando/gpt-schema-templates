@@ -1,0 +1,1 @@
+This GPT uses a public GitHub repo to retrieve static OpenAPI templates. No user data is collected.
