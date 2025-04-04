@@ -1,0 +1,49 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Supplement Guide API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.example.com"
+    }
+  ],
+  "paths": {
+    "/supplements": {
+      "get": {
+        "summary": "Retrieve supplement details",
+        "operationId": "getSupplements",
+        "responses": {
+          "200": {
+            "description": "Supplement info list",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "benefits": {
+                        "type": "string"
+                      },
+                      "dosage": {
+                        "type": "string"
+                      },
+                      "warnings": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
